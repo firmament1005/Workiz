@@ -32,145 +32,92 @@
   <div class="container">
     <div class="row form_area">                            
         <div class="col-md-5 input_box_shadow input_box" style="height: 233px;">
-            <h4 class="mb-3">Client detail</h4>
-            <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                    <div class="col-sm-6">                                      
-                      <input type="text" class="form-control" id="firstName" placeholder="First name" value="" required>
-                      <div class="invalid-feedback">
-                        Valid first name is required.
-                      </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                      <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required>
-                      <div class="invalid-feedback">
-                        Valid last name is required.
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <input type="text" class="form-control" id="phone" placeholder="1234 Main St" required>
-                      <div class="invalid-feedback">
-                        Please enter your phone number.
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback">
-                        Please enter a valid email address.
-                      </div>
-                    </div>
-                </div>                                                                 
-            </form>
+          <h4 class="mb-3">Client detail</h4>
+            <div class="row g-3">
+                <div class="col-sm-6">     
+                  <input type="text" class="form-control" name="firstName" placeholder="First name" value="">
+                </div>
+                <div class="col-sm-6">               
+                  <input type="text" class="form-control" name="lastName" placeholder="Last name" value="" >
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone">
+                </div>
+                <div class="col-12">
+                  <input type="email" class="form-control" name="email" placeholder="Email(optional)">
+                </div>
+            </div>                              
         </div>
         <div class="col-md-5 input_box_shadow input_box" style="height: 233px;">
-            <h4 class="mb-3">Job detail</h4>
-            <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                    <div class="col-sm-6">                                      
-                        <select class="form-select" id="jobtype" required>
-                            <option value="">Job type</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                        <select class="form-select" id="jobsource" required>
-                            <option value="">Job source</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" id="description" rows="3" placeholder="Job description(optional)"></textarea>
-                        <div class="invalid-feedback">
-                            Please enter your phone number.
-                        </div>
-                    </div>
-                    
-                </div>                                                                 
-            </form>
+          <h4 class="mb-3">Job detail</h4>
+            <div class="row g-3">
+                <div class="col-sm-6">     
+                    <select class="form-select" name="jobtype" required>
+                        <option value="">Job type</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>                        
+                </div>
+                <div class="col-sm-6">      
+                    <select class="form-select" name="jobsource" required>
+                        <option value="">Job source</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" name="description" rows="3" placeholder="Job description(optional)"></textarea>
+                </div>
+            </div> 
         </div>
     </div>
     <divc class="row form_area">
         <div class="col-md-5 input_box_shadow input_box" style="height: 287px;">
-            <h4 class="mb-3">Service Location</h4>
-            <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                    <div class="col-12">                                      
-                        <input type="text" class="form-control" id="address" placeholder="Address" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-12">                                      
-                        <input type="text" class="form-control" id="city" placeholder="City" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-12">                                      
-                        <input type="text" class="form-control" id="locate" placeholder="Location" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                        <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                        <select class="form-select" id="area" required>
-                            <option value="">Area</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-                </div>                                                                 
-            </form>
+          <h4 class="mb-3">Service Location</h4>
+            <div class="row g-3">
+              <div class="col-12">                
+                <input type="text" class="form-control" name="address" placeholder="Address" value="" >
+              </div>
+              <div class="col-12">                 
+                <input type="text" class="form-control" name="city" placeholder="City" value="" >
+              </div>
+              <div class="col-12">                 
+                <input type="text" class="form-control" name="locate" placeholder="Location" value="" >
+              </div>
+              <div class="col-sm-6">                
+                <input type="text" class="form-control" name="zipcode" placeholder="Zipcode" value="" >
+              </div>
+              <div class="col-sm-6">               
+                <select class="form-select" name="area">
+                  <option value="">Area</option>
+                  <option>United States</option>
+                </select>
+              </div>
+            </div>
         </div>
         <div class="col-md-5 input_box_shadow input_box" style="height: 287px;">
-            <h4 class="mb-3">Scheduled</h4>
-            <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                    <div class="col-12">                                      
-                        <input type="date" class="form-control" id="date" placeholder="Start date" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                        <input type="time" class="form-control" id="starttime" placeholder="Start time" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">                                      
-                        <input type="time" class="form-control" id="endtime" placeholder="Endtime" value="" required>
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>                                    
-                    <div class="col-12">                                      
-                        <select class="form-select" id="testselect" required>
-                            <option value="">Test select</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-                </div>                                                                 
-            </form>
+          <h4 class="mb-3">Scheduled</h4>
+            <div class="row g-3">
+                <div class="col-12">                 
+                  <input type="date" class="form-control" name="start_date" placeholder="Start date" value="">
+                </div>
+                <div class="col-sm-6">               
+                  <input type="time" class="form-control" name="start_time" placeholder="Start time" value="" >
+                </div>
+                <div class="col-sm-6">              
+                  <input type="time" class="form-control" name="end_time" placeholder="Endtime" value="" >                        
+                </div>                                    
+                <div class="col-12">                 
+                  <select class="form-select" name="testselect">
+                    <option value="">Test select</option>
+                    <option>United States</option>
+                  </select>
+                </div>
+            </div>
         </div>                            
     </div>
+    <button type="button" class="btn btn-primary" onclick="add_deal()">Save</button>
   </div>
 </body>
 
